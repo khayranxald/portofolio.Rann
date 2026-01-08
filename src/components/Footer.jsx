@@ -13,29 +13,29 @@ const Footer = () => {
     <div className="mt-32 pb-8 flex flex-col items-center relative z-10">
       {/* Flex container adaptif */}
       <div className="w-full flex flex-col md:flex-row items-center md:justify-between gap-6">
-        
         {/* Judul - paling atas di mobile */}
-        <h1 className="text-2xl font-bold order-1 md:order-none">
-          Portofolio
-        </h1>
+        <h1 className="text-2xl font-bold order-1 md:order-none">Portofolio</h1>
 
         {/* Ikon Sosmed - di tengah di mobile */}
         <div className="flex gap-3 order-2 md:order-none">
-          <a href="https://github.com/rissss21"><i className="ri-github-fill ri-2x"></i></a>
-          <a href="https://www.instagram.com/farisedrikprayoga/"><i className="ri-instagram-fill ri-2x"></i></a>
-          <a href="https://www.youtube.com/@FarisEdrikPrayoga"><i className="ri-youtube-fill ri-2x"></i></a>
+          <a href="https://github.com/khayranxald">
+            <i className="ri-github-fill ri-2x"></i>
+          </a>
+          <a href="https://www.instagram.com/_khyranxald/">
+            <i className="ri-instagram-fill ri-2x"></i>
+          </a>
+          <a href="https://www.tiktok.com/@khyran_as" target="_blank" rel="noopener noreferrer">
+            <i className="ri-tiktok-fill ri-2x"></i>
+          </a>
         </div>
 
         {/* Dock - paling bawah di mobile */}
         <div className="order-3 md:order-none mt-15 md:mt-0  md:mb-0">
-          <Dock 
-            items={items}
-            panelHeight={30}
-            baseItemSize={60}
-            magnification={100}
-          />
+          <Dock items={items} panelHeight={30} baseItemSize={60} magnification={100} />
         </div>
 
+        {/* COPYRIGHT */}
+        <div className="mt-10 text-center text-sm text-zinc-500 border-t border-zinc-800 pt-4 w-full">© {new Date().getFullYear()} Khayran Ald Afasy. All rights reserved.</div>
       </div>
     </div>
   );
